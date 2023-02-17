@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>404 not found</title>
+  </head>
+  <body>
+    <h1>404 not found</h1>
+    <p id="randomNumber"></p>
+    <script>
+      var textArray = [
+        "looks like you're lost :(",
+        "heh, oops",
+        "bemy.lol is not held responsible for you getting lost",
+        "gggggggg",
+        "shout out to bemy",
+        "shout out to ababeiue",
+        "hey guys it me bemwy",
+        "joswy joswy joswy",
+        "404 not found, WAIT I ALREADY SAID THAT"
+      ];
+      var randomNumber = Math.floor(Math.random() * textArray.length);
+      document.getElementById("randomNumber").innerHTML = textArray[randomNumber];
+    </script>
+  </body>
+</html>
