@@ -1,46 +1,47 @@
 @font-face {
-    font-family: 'segoe';
-    src: url('https://bemy.lol/fonts/fot-modeminblargestd-r-webfont.woff2') format('woff2'),
-         url('https://bemy.lol/fonts/fot-modeminblargestd-r-webfont.woff') format('woff');
+    font-family: 'fot-modeminblarge_stdr';
+    src: url('fot-modeminblargestd-r-webfont.woff2') format('woff2'),
+         url('fot-modeminblargestd-r-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 body {
   background-color: #1e354e;
 }
 h1 {
   color: white;
-  font-family: 'segoe', sans-serif;
+  font-family: 'fot-modeminblarge_stdr', serif;
 }
 h1.big {
   font-size: 60px;
 }
 p {
   color: white;
-  font-family: 'segoe', sans-serif;
+  font-family: 'fot-modeminblarge_stdr', serif;
 }
 p.big {
   color: white;
-  font-family: 'segoe', sans-serif;
+  font-family: 'fot-modeminblarge_stdr', serif;
   font-size: 40px;
 }
 a:link {
   color: blue;
-  font-family: 'segoe', sans-serif;
+  font-family: 'fot-modeminblarge_stdr', serif;
   text-decoration: none;
 }
 a {
   color: blue;
-  font-family: 'segoe', sans-serif;
+  font-family: 'fot-modeminblarge_stdr', serif;
   text-decoration: none;
 }
 a:visited {
   color: purple;
-  font-family: 'segoe', sans-serif;
+  font-family: 'fot-modeminblarge_stdr', serif;
 }
 a:hover {
   color: #2f72de;
-  font-family: 'segoe', sans-serif;
+  font-family: 'fot-modeminblarge_stdr', serif;
 }
 iframe {
   border-style: none;
