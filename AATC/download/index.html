@@ -14,12 +14,26 @@
             font-family: 'FOT-ModeminBLarge_StdR', sans-serif;
         }
     </style>
-    <meta http-equiv="refresh" content="0; url=https://bemy.lol/AATC/AATCCustomAssetManagerWIN.zip">
+    <script>
+        function redirectToDownload() {
+            let os = navigator.platform.toLowerCase();
+            let downloadUrl = 'https://bemy.lol/AATC/AATCCustomAssetManager-win.zip'; // Default to Windows
+
+            if (os.includes('mac') || os.includes('darwin')) {
+                downloadUrl = 'https://bemy.lol/AATC/AATCCustomAssetManager-mac.zip';
+            } else if (os.includes('linux')) {
+                downloadUrl = 'https://bemy.lol/AATC/AATCCustomAssetManager-linux.zip';
+            }
+
+            document.getElementById('fallback-link').href = downloadUrl; // Update the fallback link
+            window.location.href = downloadUrl;
+        }
+    </script>
 </head>
-<body>
+<body onload="redirectToDownload()">
     <div class="redirect-container">
-	<title>Downloading AATC Custom Asset Manager</title>
-        <p>If you are not redirected automatically, <a href="https://bemy.lol/AATC/AATCCustomAssetManagerWIN.zip">click here</a>.</p>
+        <h1><strong>Downloading AATC Custom Asset Manager</strong></h1>
+        <p>If you are not redirected automatically, <a id="fallback-link" href="https://bemy.lol/AATC/AATCCustomAssetManager-win.zip">click here</a>.</p>
     </div>
 </body>
 </html>
