@@ -1,4 +1,4 @@
-<html><head><style>@font-face {
+﻿<html><head><style>@font-face {
     font-family: 'fot-modeminblarge_stdr';
     src: url('fot-modeminblargestd-r-webfont.woff2') format('woff2'),
          url('fot-modeminblargestd-r-webfont.woff') format('woff');
@@ -15,6 +15,13 @@ h1 {
 }
 h1.big {
   font-size: 60px;
+}
+h2 {
+  color: white;
+  font-family: 'fot-modeminblarge_stdr', serif;
+}
+h2.big {
+  font-size: 45px;
 }
 ul {
   color:white;
@@ -48,41 +55,79 @@ a:hover {
 }
 iframe {
   border-style: none;
-}</style></head><body><h1 id="update-v0-1-5-">Update v0.1.5!</h1>
-<p>(Pretend this is 0.2.0...)</p>
-<h1 id="additions-">Additions:</h1>
-<h1 id="-added-sfx-management-">- <strong>Added SFX Management!</strong></h1>
+}
+</style></head>
+<body>
+<h1 id="version-v0.3.0-released">Version v0.3.0 Released!</h1>
+<h1 id="additions">Additions:</h1>
+<h2 id="added-background-management">Added Background Management!</h2>
 <ul>
-SFX:<ul>
-<li>You can swap between managing Music and SFX with the &quot;Switch&quot; button</li>
-<li>You can preview your SFX by clicking the &quot;Rename&quot; button but not renaming the SFX</li>
-<li>You will not lose either when switching, and they will both be exported in the same zip file</li>
-<li>In the future, all different custom assets will be able to be edited within the same session and exported to one zip file</li>
-<li>Importing a zip will let you choose to start in either sound editing or music editing, unless one of them doesn&#39;t exist, in which case the program knows it can just choose the only option.</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>Backgrounds:
 <ul>
-<li>Added the ability to name your zip file before exporting</li>
-<li>Added a loading animation for importing and exporting</li>
-<li>Added text that tells you the progress of what you&#39;re loading/exporting <ul>
-<li>Example: &quot;Loading Song (3/5)&quot;</li>
+<li>Backgrounds preview as images, including foregrounds, so you know how they should look in-game</li>
+<li>Backgrounds do not require foregrounds, but foregrounds require backgrounds</li>
+<li>Characters can be used to preview backgrounds</li>
+<li>There are 4 default characters
+<ul>
+<li>Defense (Phoenix Wright)</li>
+<li>Prosecution (Miles Edgeworth)</li>
+<li>Witness (Larry Butz)</li>
+<li>Counsel (Maya Fey)</li>
 </ul>
 </li>
-<li>Added the Switch button</li>
-<li>Added a sound for selecting from a dropdown menu</li>
-<li>Rewrote some code<h2 id="bug-fixes-">Bug fixes:</h2>
-</li>
-<li>Fixed a bug where you could press the Edit and Delete buttons without any files</li>
-<li>Fixed a bug where you could upload a zip file that had no custom</li>
-<li>Fixed a bug where text boxes wouldn&#39;t show up</li>
-<li>Fixed a bug where you could upload a second file of the same name, messing up your file</li>
-<li>Fixed a bug where you could upload nothing</li>
-<li>Fixed a bug where some internal data would not initialize properly</li>
-<li>Fixed bugs related to the program improperly accessing files in certain situations<h2 id="changes-">Changes:</h2>
-</li>
-<li>Changed the instructions once you export a file</li>
-<li>Changed exporting to hide the editor GUI</li>
+<li>If those characters don’t suit your needs, you can also upload an image to be used as the preview character with the custom option!</li>
+<li>Background previewing is a bit slow, but still functional.</li>
+<li>You can rename backgrounds and add/remove foregrounds.</li>
+<li>Coming soon, you’ll be able to change the background of CAM to match a background of your choice!
+<ul>
+<li>This is a feature that will exist just for fun.</li>
+<li>An options menu will be added allowing you to restore the original background, as well as some other options.</li>
 </ul>
-</body></html>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="changes">Changes:</h1>
+<h2 id="file-management">File Management</h2>
+<ul>
+<li>Changed how files load in CAM
+<ul>
+<li>Added an option to load from URL</li>
+<li>Modified the export process so that everything is now in a “Custom Assets” folder.
+<ul>
+<li>This changed the importing process as well, so any zip files made in older versions will now warn you that they may not import properly.</li>
+</ul>
+</li>
+<li>Added example files to my website
+<ul>
+<li>These will be the default URLs when you click Load from URL, and are a great way to test the program out.</li>
+<li>There exists 6 example files currently
+<ul>
+<li>An example.ogg file (The Truth Revealed 2016)</li>
+<li>An example.wav file (Jingle - A Quick Breather)</li>
+<li>An examplebg.png file (The Spirit of Justice Defense)</li>
+<li>An examplefg.png file (The Spirit of Justice Defense Foreground)</li>
+<li>An example.zip file (A zip file containing the first 4 items on this list)</li>
+<li>An examplechar.png file (Phoenix Wright from Spirit of Justice)
+<ul>
+<li>This is the default for custom character previews in the background editor</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="bug-fixes">Bug Fixes</h1>
+<h2 id="general">General:</h2>
+<ul>
+<li>Fixed a bug where the editor would improperly load the buttons, showing the wrong names on a button
+<ul>
+<li>Example: Add New Background when in Music editing</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>
