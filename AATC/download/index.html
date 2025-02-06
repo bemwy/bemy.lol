@@ -17,7 +17,7 @@
     <script>
         function redirectToDownload() {
             let os = navigator.platform.toLowerCase();
-            let downloadUrl = 'https://bemy.lol/AATC/AATCCustomAssetManager-win.zip'; // Default to Windows
+            let downloadUrl = 'https://bemy.lol/AATC/AATCCustomAssetManagerSetup.exe'; // Default to Windows
 
             if (os.includes('mac') || os.includes('darwin')) {
                 downloadUrl = 'https://bemy.lol/AATC/AATCCustomAssetManager-mac.zip';
@@ -33,7 +33,7 @@
 <body onload="redirectToDownload()">
     <div class="redirect-container">
         <h1><strong>Downloading AATC Custom Asset Manager</strong></h1>
-        <p>If you are not redirected automatically, <a id="fallback-link" href="https://bemy.lol/AATC/AATCCustomAssetManager-win.zip">click here</a>.</p>
+        <p>If you are not redirected automatically, <a id="fallback-link" href="https://bemy.lol/AATC/AATCCustomAssetManagerSetup.exe">click here</a>.</p>
     </div>
 </body>
 </html>
