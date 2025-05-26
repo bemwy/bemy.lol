@@ -6,42 +6,47 @@
     font-style: normal;
 }
 body {
-  background-color: #9ad5ff;
+  background-color: #8732a8;
 }
 h1 {
-  color: black;
+  color: white;
   font-family: 'segoe', sans-serif;
 }
 h1.big {
   font-size: 60px;
 }
 p {
-  color: black;
+  color: white;
   font-family: 'segoe', sans-serif;
 }
 p.big {
-  color: black;
+  color: white;
   font-family: 'segoe', sans-serif;
   font-size: 40px;
 }
 a:link {
-  color: black;
+  color: white;
   font-family: 'segoe', sans-serif;
   text-decoration: none;
 }
 a {
-  color: black;
+  color: white;
   font-family: 'segoe', sans-serif;
   text-decoration: none;
 }
 a:visited {
-  color: black;
+  color: white;
   font-family: 'segoe', sans-serif;
 }
 a:hover {
-  color: #2f72de;
+  color: #de2fbb;
   font-family: 'segoe', sans-serif;
 }
+
+img {
+       image-rendering: pixelated;
+}
+   
 iframe {
   border-style: none;
 }
